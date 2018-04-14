@@ -16,10 +16,10 @@ function driversByName(drivers) {
   return drivers.slice(0).sort((a,b) => a.name.localeCompare(b.name));
 }
 
-function totalRevenue() {
-
+function totalRevenue(drivers) {
+  return drivers.reduce((total, driver) => total + driver.revenue,0);
 }
 
-function averageRevenue() {
+function averageRevenue(drivers) {
 
 }
