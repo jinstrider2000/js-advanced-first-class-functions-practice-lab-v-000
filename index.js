@@ -3,8 +3,9 @@ function logDriverNames(drivers) {
   drivers.forEach((driver) => console.log(driver.name));
 }
 
-function logDriversByHometown() {
-
+function logDriversByHometown(drivers, hometown) {
+  const matched = drivers.filter((driver) => hometown === driver.hometown);
+  logDriverNames(matched);
 }
 
 function driversByRevenue() {
