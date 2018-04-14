@@ -8,8 +8,8 @@ function logDriversByHometown(drivers, hometown) {
   logDriverNames(matched);
 }
 
-function driversByRevenue() {
-
+function driversByRevenue(drivers) {
+  return drivers.slice(0).sort((a,b) => a-b);
 }
 
 function driversByName() {
